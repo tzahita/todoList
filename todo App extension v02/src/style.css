@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+body {
+    padding: 5px;
+    /* border: 1px solid black; */
+    /* border-radius: 5px; */
+}
+
+main {
+    width: 300px;
+    display: inline-block;
+}
+
+main>h1 {
+    text-align: center;
+}
+
+#add-task-container {
+    border-radius: 20px;
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+
+}
+
+#remove-completed {
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#task-input {
+    padding: 6px;
+    border: 1px solid black;
+    width: 100%;
+}
+
+.plus-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+#add-task-container:hover,
+#remove-completed:hover {
+    cursor: pointer;
+    /* border: 1px solid black; */
+}
+
+
+
+.plus-icon+span {
+    font-size: 1.2rem;
+    vertical-align: middle;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.task {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.219);
+
+}
+
+.task:hover {
+    /* background-color:  rgba(128, 128, 128, 0.103); */
+    /* background-color: hsla(120, 100%, 25%, 0.164); */
+    background-color: hsla(120, 100%, 25%, 0.102);
+}
+
+#tasks-container {
+    width: 100%;
+}
+
+#completed-tasks {
+    /* background-color: hsla(0, 100%, 25%, 0.164); */
+    background-color: hsla(120, 100%, 25%, 0.102);
+    width: 100%;
+}
+
+#incomplete-tasks {
+    width: 100%;
+    /* background-color: hsla(120, 100%, 25%, 0.164); */
+}
+
+
+.task-content {
+    display: inline-block;
+    padding: 10px;
+    width: 100%;
+    text-align: justify;
+    font-size: 1.2em;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+
+input.is-complete {
+    min-width: 25px;
+    min-height: 25px;
+    margin: 10px;
+    display: none;
+}
+
+input.is-complete:focus {
+    outline: 0 solid transparent;
+}
+
+.checked {
+    text-decoration: line-through;
+
+}
+
+#toFlex {
+    display: flex;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: #F5F5F5;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    background-image: gradient(linear, top, bottom, from(#ee3968), to(#f58a65));
+    background-image: -webkit-linear-gradient(top, #ee3968 0%, #f58a65 100%);
+    background-image: linear-gradient(to bottom, #ee3968 0%, #f58a65 100%);
+}

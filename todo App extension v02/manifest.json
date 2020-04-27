@@ -1,0 +1,22 @@
+{
+  "name": "ToDo App",
+  "version": "2.002",
+  "description": "Build an Extension!",
+  "permissions": ["declarativeContent", "storage"],
+  "options_page": "options.html",
+  "background": {
+    "scripts": ["src/jquery-3.4.1.min.js", "background.js"],
+    "persistent": false
+  },
+
+  "page_action": {
+    "default_popup": "index.html"
+  },
+  "icons": {
+    "16": "icon/Layer 2.png",
+    "48": "icon/icon48.png",
+    "128": "icon/icon128.png"
+  },
+
+  "manifest_version": 2
+}
